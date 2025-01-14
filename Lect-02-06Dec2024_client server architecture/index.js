@@ -1,6 +1,6 @@
 
 const http = require('http');
-
+//http module
 const server = http.createServer((req, res) => {
   const url = req.url;
 
