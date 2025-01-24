@@ -13,6 +13,10 @@ app.get('/raghav',(req,res)=>{
     res.render('raghav.ejs');
 });
 
+app.get('/radha',(req,res)=>{
+    res.render('radha.ejs');
+});
+
 app.listen(3000,()=>{
     console.log('server is running on port 3000')
 });
