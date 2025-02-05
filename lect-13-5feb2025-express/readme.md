@@ -36,6 +36,8 @@ const PORT = 3000;
 
 // Middleware to serve static files from 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static('public'));
+app.use('/static',express.static('assets'));
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
