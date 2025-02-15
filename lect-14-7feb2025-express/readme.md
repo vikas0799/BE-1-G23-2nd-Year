@@ -16,6 +16,13 @@ Middleware functions can perform the following tasks:
 - Pass control to the next middleware function in the stack using `next()`
 
 If a middleware function does not end the request-response cycle, it must call `next()`, or the request will be left hanging.
+## Middleware Lifecycle
+The middleware lifecycle in Express.js follows these steps:
+
+### Request Initiation: A client sends an HTTP request to the server. </br>
+### Middleware Execution: Express processes middleware functions in order (application-level, router-level, error-handling, etc.).</br>
+### Route Handling: Once all middleware has executed, the final request reaches the route handler (if not terminated earlier). </br>
+### Response Processing: The response is sent back to the client.
 
 ## Types of Middleware in Express
 An Express application can use the following types of middleware:
